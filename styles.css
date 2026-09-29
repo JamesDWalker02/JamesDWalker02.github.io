@@ -144,3 +144,16 @@
     padding: 24px;
   }
 }
+
+.fundraising-link {
+  display: block;
+  width: fit-content;
+  margin-top: 16px;
+  color: white;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.fundraising-link:hover {
+  text-decoration: underline;
+}
