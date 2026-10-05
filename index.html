@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="James Walker's engineering and sustainability portfolio.">
+  <meta name="description" content="Explore James Walker's chemical engineering projects, sustainability research, planned articles and fundraising for Cancer Research UK.">
+  <link rel="canonical" href="https://jamesdwalker02.github.io/">
   <title>James Walker | Engineering & Sustainability</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header>
     <div class="container nav">
       <a class="brand" href="index.html">James Walker</a>
-      <nav>
-        <a class="active" href="#">Home</a>
-        <a href="#articles">Articles</a>
+      <nav aria-label="Main navigation">
+        <a class="active" aria-current="page" href="index.html">Home</a>
+        <a href="articles.html">Articles</a>
         <a href="#projects">Projects</a>
         <a href="fundraising.html">Fundraising</a>
         <a href="#about">About</a>
@@ -21,19 +23,20 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero">
       <div class="container hero-grid">
         <div>
           <p class="eyebrow">Chemical Engineering · Sustainability · Environment</p>
           <h1>Engineering ideas for a more sustainable future.</h1>
-          <p class="intro">I’m James Walker, an MSc Sustainable Chemical Engineering graduate from Newcastle University. This site brings together my engineering projects, independent research and fundraising.</p>
-          <a class="button" href="#projects">Explore my work</a>
+          <p class="intro">I’m James Walker, a chemical engineering graduate who has recently completed MSc study in Sustainable Chemical Engineering at Newcastle University, with my dissertation result pending. This is a space for my engineering projects, independent research and fundraising.</p>
+          <div class="hero-actions"><a class="button" href="#projects">Explore my work <span aria-hidden="true">↗</span></a><a class="text-link" href="articles.html">Browse planned articles <span aria-hidden="true">→</span></a></div>
         </div>
-        <aside>
+        <aside class="focus-card" aria-label="Current focus">
           <span>Current focus</span>
-          <h2>Water, decarbonisation and environmental engineering</h2>
-          <p>Building on experience in wastewater treatment, process design, carbon capture, sustainable industry and environmental assessment.</p>
+          <h2>Turning research into practical ideas.</h2>
+          <p>Exploring the connections between water, energy and a lower-carbon industry.</p>
+          <ul class="focus-list"><li><span aria-hidden="true">01</span> Water & environment</li><li><span aria-hidden="true">02</span> Industrial decarbonisation</li><li><span aria-hidden="true">03</span> Sustainable process design</li></ul>
         </aside>
       </div>
     </section>
@@ -41,10 +44,11 @@
     <section class="section" id="articles">
       <div class="container">
         <p class="eyebrow">Independent research</p>
-        <h2>Articles</h2>
-        <div class="grid">
-          <article class="card"><small>IN DEVELOPMENT</small><h3>The Carbon Cost of AI</h3><p>Exploring how rapid data-centre growth can be supplied with lower-carbon electricity.</p></article>
-          <article class="card"><small>PLANNED</small><h3>Nutrient Pollution in UK Waters</h3><p>Exploring nitrogen and phosphorus pollution and engineering options to reduce nutrient discharges.</p></article>
+        <div class="section-heading"><h2>Questions worth exploring.</h2><a class="text-link" href="articles.html">View all planned articles <span aria-hidden="true">→</span></a></div>
+        <p class="section-intro">Independent articles on the environmental challenges that interest me, bringing together research, engineering analysis and practical options.</p>
+        <div class="article-preview-grid">
+          <article class="feature-card"><div class="feature-meta"><small>ENERGY & CLIMATE</small><span class="status-light">In development</span></div><h3>The Carbon Cost of AI</h3><p>How are growing data centres powered, what does that mean for emissions, and what would cleaner electricity or carbon capture cost?</p><div class="feature-footer"><span class="coming-soon coming-soon-light">Coming soon</span><a href="articles.html">Explore the article plans <span aria-hidden="true">→</span></a></div></article>
+          <article class="card preview-card"><small>WATER & ENVIRONMENT</small><h3>Nutrient Pollution in UK Waters</h3><p>Where nitrogen and phosphorus pollution comes from, why it matters, and how engineering can help reduce nutrient discharges.</p><span class="coming-soon">Coming soon</span><a class="text-link" href="articles.html">See what’s planned <span aria-hidden="true">→</span></a></article>
         </div>
       </div>
     </section>
@@ -101,7 +105,7 @@
     <section class="section alt" id="about">
       <div class="container two-col">
         <div><p class="eyebrow">About</p><h2>Engineering with an environmental focus</h2></div>
-        <div><p>I recently completed an MSc in Sustainable Chemical Engineering at Newcastle University, achieving a 76% Distinction-level average across taught modules, with my dissertation result pending. I previously completed a BEng (Hons) in Chemical Engineering.</p><p>I’m particularly interested in water and environmental engineering, process engineering, sustainability and the wider energy transition.</p></div>
+        <div><p>I recently completed MSc study in Sustainable Chemical Engineering at Newcastle University, achieving a 76% Distinction-level average across taught modules, with my dissertation result pending. I previously completed a BEng (Hons) in Chemical Engineering.</p><p>I’m particularly interested in water and environmental engineering, process engineering, sustainability and the wider energy transition.</p><p>While applying for graduate roles, I’m developing independent research articles and preparing fundraising challenges for Cancer Research UK. Alongside this, I continue to work in hospitality with supervisory responsibilities, supporting colleagues and helping coordinate service.</p><a class="text-link" href="articles.html">Follow my independent research <span aria-hidden="true">→</span></a></div>
       </div>
     </section>
   </main>
