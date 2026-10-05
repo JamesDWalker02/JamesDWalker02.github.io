@@ -283,3 +283,7 @@ a:focus-visible { outline: 3px solid #b86b2d; outline-offset: 5px; }
   .personal-note { padding: 24px; }
   .project-index { gap: 10px; }
 }
+
+/* Official Cancer Research UK fundraiser artwork, displayed without cropping. */
+.charity-artwork { margin: 24px 0 0; }
+.charity-artwork img { display: block; width: 180px; max-width: 100%; height: auto; }
