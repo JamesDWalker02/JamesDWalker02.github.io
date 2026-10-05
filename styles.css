@@ -287,3 +287,20 @@ a:focus-visible { outline: 3px solid #b86b2d; outline-offset: 5px; }
 /* Official Cancer Research UK fundraiser artwork, displayed without cropping. */
 .charity-artwork { margin: 24px 0 0; }
 .charity-artwork img { display: block; width: 180px; max-width: 100%; height: auto; }
+
+/* Personal photographs: preserve complete images and pair them with their context. */
+.fundraising-overview { align-items: center; }
+.race-photo { margin: 24px 0 0; }
+.race-photo img { display: block; width: 100%; height: auto; border-radius: 10px; }
+.race-photo figcaption { margin-top: 12px; color: var(--muted); font-size: .88rem; line-height: 1.6; }
+.fundraising-sidebar .charity-artwork img { width: 140px; margin: 0 auto; }
+.project-photo-section { margin-top: 50px; }
+.project-photo-section > h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 500; font-size: 1.7rem; margin-bottom: 24px; }
+.project-photo-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.project-photo { margin: 0; background: white; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.project-photo a { display: block; }
+.project-photo img { display: block; width: 100%; height: auto; }
+.project-photo figcaption { padding: 18px; color: var(--muted); font-size: .86rem; line-height: 1.6; }
+.project-photo figcaption strong { display: block; color: var(--ink); font-size: 1rem; margin-bottom: 8px; }
+@media (max-width: 980px) { .project-photo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .project-photo-grid { grid-template-columns: 1fr; } }
