@@ -304,3 +304,62 @@ a:focus-visible { outline: 3px solid #b86b2d; outline-offset: 5px; }
 .project-photo figcaption strong { display: block; color: var(--ink); font-size: 1rem; margin-bottom: 8px; }
 @media (max-width: 980px) { .project-photo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 520px) { .project-photo-grid { grid-template-columns: 1fr; } }
+
+/* A quieter homepage introduction and clearer article context. */
+.home-hero { padding: 60px 0; }
+.home-introduction { display: grid; gap: 28px; }
+.home-hero h1 { max-width: 100%; font-family: inherit; font-weight: 500; font-size: clamp(1.7rem, 3.2vw, 2.5rem); line-height: 1.3; letter-spacing: -.025em; }
+.home-hero .intro { max-width: 940px; font-size: 1.12rem; margin: 22px 0 0; }
+.home-hero .personal-note { padding: 28px 32px; }
+.home-hero .personal-note h2 { margin: 0 0 18px; font-size: 1.8rem; }
+.home-hero .personal-note p { max-width: 940px; font-size: 1rem; }
+.grid .card .project-mark { display: inline-block; margin: 2px 0 8px; padding: 5px 10px; border-radius: 5px; background: var(--soft); color: var(--dark); font-size: .82rem; font-weight: 700; }
+.articles-hero .page-description { max-width: 850px; font-size: 1.22rem; line-height: 1.7; margin-bottom: 0; }
+.projects-hero .page-description { margin-top: 24px; }
+
+/* Fundraising uses the blue, purple and pink of the CRUK artwork. */
+.cruk-theme {
+  --ink: #201451;
+  --muted: #51496a;
+  --green: #44258e;
+  --dark: #28155f;
+  --soft: #f1edfa;
+  --line: #ddd3ee;
+  --cruk-blue: #243b98;
+  --cruk-purple: #64268e;
+  --cruk-pink: #d5007f;
+  --cruk-pink-dark: #b10069;
+  color: var(--ink);
+}
+.fundraising-highlight { background: linear-gradient(125deg, #eaf0ff, #f3edff 55%, #ffeaf5); border-block: 1px solid var(--line); border-top: 4px solid var(--cruk-pink); }
+.fundraising-highlight h2 { color: var(--cruk-purple); }
+.cruk-theme .fund-card { background: linear-gradient(125deg, var(--cruk-blue), var(--cruk-purple)); border: 1px solid #7660aa; box-shadow: 0 16px 40px rgba(51, 27, 109, .12); }
+.cruk-theme .fund-card small, .cruk-theme .fund-card p { color: #f5efff; }
+.cruk-theme .donate-button, .cruk-theme .button { background: var(--cruk-pink); color: white; border: 2px solid transparent; min-height: 52px; padding: 13px 18px; text-align: center; line-height: 1.4; }
+.cruk-theme .donate-button:hover, .cruk-theme .button:hover { background: var(--cruk-pink-dark); }
+.fundraising-actions { display: grid; gap: 12px; margin-top: 24px; }
+.fundraising-actions > a { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; margin: 0; }
+.cruk-theme .fundraising-link { padding: 13px 18px; min-height: 52px; border: 2px solid white; border-radius: 6px; background: white; color: var(--cruk-blue); font-weight: 750; line-height: 1.4; text-decoration: none; }
+.cruk-theme .fundraising-link:hover { background: #f8eafa; border-color: #f8eafa; }
+.fundraising-highlight .charity-artwork { width: fit-content; margin: 24px auto 0; padding: 16px; background: white; border: 1px solid var(--line); border-radius: 12px; }
+.fundraising-highlight .charity-artwork img { width: 150px; }
+.cruk-theme a:focus-visible { outline-color: #ffb830; }
+
+.fundraising-page { background: #f9f6ff; }
+.fundraising-page header { background: rgba(249, 246, 255, .97); }
+.fundraising-page .fundraising-hero { background: linear-gradient(125deg, var(--cruk-blue), var(--cruk-purple)); color: white; }
+.fundraising-page .fundraising-hero .eyebrow { color: #ffd0eb; }
+.fundraising-page .fundraising-hero .intro { color: #f5efff; }
+.fundraising-page .fundraising-hero .fund-card { background: rgba(255, 255, 255, .1); border-color: rgba(255, 255, 255, .35); box-shadow: none; }
+.fundraising-page .section { background: #f9f6ff; }
+.fundraising-page .section.alt { background: linear-gradient(125deg, #eef0ff, #f3edff 55%, #ffeaf5); }
+.fundraising-page .challenge-card { border-color: var(--line); border-left: 4px solid var(--cruk-blue); }
+.fundraising-page .more-card { border: 2px dashed #b291cf; background: white; }
+.fundraising-page .section:last-child { background: #ffeaf5; border-top: 1px solid var(--line); }
+.fundraising-page footer { background: #f1edfa; }
+@media (max-width: 520px) {
+  .home-hero { padding: 42px 0; }
+  .home-hero .personal-note { padding: 24px; }
+  .home-hero .intro, .articles-hero .page-description { font-size: 1.08rem; }
+  .fundraising-highlight .fund-card { padding: 26px; }
+}
