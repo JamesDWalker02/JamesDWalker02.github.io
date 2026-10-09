@@ -302,10 +302,10 @@ header nav { align-items: center; }
 .fundraising-sidebar .charity-artwork img { width: 140px; margin: 0 auto; }
 .project-photo-section { margin-top: 50px; }
 .project-photo-section > h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 500; font-size: 1.7rem; margin-bottom: 24px; }
-.project-photo-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.project-photo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .project-photo { margin: 0; background: white; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
 .project-photo a { display: block; }
-.project-photo img { display: block; width: 100%; height: auto; }
+.project-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; background: var(--paper); }
 .project-photo figcaption { padding: 18px; color: var(--muted); font-size: .86rem; line-height: 1.6; }
 .project-photo figcaption strong { display: block; color: var(--ink); font-size: 1rem; margin-bottom: 8px; }
 @media (max-width: 980px) { .project-photo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
