@@ -403,9 +403,9 @@ header nav { align-items: center; }
   .fundraising-highlight .fundraising-overview { grid-template-areas: "copy" "appeal" "photo"; row-gap: 12px; }
 }
 
-/* Keep the About heading close to its text when the columns stack. */
-#about h2 { margin-bottom: 0; }
-#about .two-col > div + div > p:first-child { margin-top: 0; }
+/* Consistent heading-to-copy spacing in stacked editorial sections. */
+.section .two-col:not(.fundraising-overview) h2 { margin-bottom: 0; }
+.section .two-col:not(.fundraising-overview) > div + div > p:first-child { margin-top: 0; }
 @media (max-width: 820px) {
-  #about .two-col { row-gap: 20px; }
+  .section .two-col:not(.fundraising-overview) { row-gap: 20px; }
 }
