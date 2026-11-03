@@ -370,3 +370,35 @@ header nav { align-items: center; }
   .home-hero .intro, .articles-hero .page-description { font-size: 1.08rem; }
   .fundraising-highlight .fund-card { padding: 26px; }
 }
+
+/* Small refinements to let the writing and personal photographs lead. */
+.home-hero { background: var(--paper); }
+.brand::before { display: none; }
+#articles .feature-card { background: white; color: var(--ink); border: 1px solid var(--line); box-shadow: none; }
+#articles .feature-card p { color: var(--muted); }
+#articles .feature-meta small { color: var(--green); }
+#articles .status-light, #articles .coming-soon-light { color: var(--dark); background: var(--soft); border-color: #aebeb3; }
+#articles .feature-card, #articles .preview-card, #projects .card { border-radius: 4px; }
+#articles .feature-card h3 { margin-top: 22px; font-size: 2rem; }
+#learning .two-col p { margin-top: 0; }
+.fundraising-highlight .fundraising-overview { align-items: start; gap: 36px; }
+.fundraising-highlight .fund-card { box-shadow: none; }
+.fundraising-highlight .charity-artwork { padding: 10px; }
+.fundraising-highlight .charity-artwork img { width: 110px; }
+@media (max-width: 820px) {
+  .home-hero { padding: 36px 0; }
+  .home-hero .intro { margin-top: 16px; }
+  .fundraising-highlight { padding: 32px 0; }
+  .fundraising-highlight .fundraising-overview { gap: 12px; }
+  .fundraising-highlight h2 { font-size: 1.85rem; margin-bottom: 12px; }
+  .fundraising-highlight .fund-card { padding: 22px; }
+  .fundraising-actions { margin-top: 16px; }
+}
+
+.fundraising-highlight .fundraising-overview { grid-template-areas: "copy appeal" "photo appeal"; row-gap: 0; }
+.fundraising-copy { grid-area: copy; }
+.fundraising-highlight .fundraising-sidebar { grid-area: appeal; }
+.fundraising-highlight .race-photo { grid-area: photo; }
+@media (max-width: 820px) {
+  .fundraising-highlight .fundraising-overview { grid-template-areas: "copy" "appeal" "photo"; row-gap: 12px; }
+}
