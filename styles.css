@@ -440,3 +440,172 @@ header nav { align-items: center; }
   .fundraising-update-body { padding: 24px; }
   .fundraising-update-grid { margin-top: 28px; }
 }
+
+
+/* ---------------------------------------------
+   Newcastle academic projects — independent portfolio styling.
+   Navy and restrained red accents are inspired by the user's alma mater.
+   The University crest and logo are intentionally not reproduced.
+   --------------------------------------------- */
+.projects-page {
+  --ink: #051435;
+  --muted: #4d5e71;
+  --green: #003a65;
+  --dark: #051435;
+  --soft: #f2f6fa;
+  --line: #d7e0e9;
+  --paper: #ffffff;
+  --white: #ffffff;
+  --project-navy: #051435;
+  --project-blue: #003a65;
+  --project-red: #c60c30;
+  background: #ffffff;
+}
+.projects-page header { background: rgba(255,255,255,.97); border-bottom: 1px solid #d9e2ec; }
+.projects-page .brand::before { background: var(--project-red); }
+.projects-page nav a.active { color: var(--project-navy); box-shadow: 0 3px 0 var(--project-red); }
+.projects-page nav a:hover { color: var(--project-red); }
+.projects-page .projects-hero {
+  background: linear-gradient(110deg, #ffffff 35%, #f1f5fa 100%);
+  border-top: 4px solid var(--project-red);
+  border-bottom: 2px solid var(--project-navy);
+  padding: 52px 0 54px;
+}
+.projects-page .academic-affiliation {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  column-gap: 13px;
+  row-gap: 2px;
+  width: fit-content;
+  max-width: 100%;
+  padding: 10px 16px;
+  margin-bottom: 28px;
+  background: white;
+  border-left: 4px solid var(--project-red);
+  border-block: 1px solid #dde5ed;
+  border-right: 1px solid #dde5ed;
+  border-radius: 0 7px 7px 0;
+}
+.projects-page .academic-affiliation-kicker {
+  color: #58708b;
+  font-size: .70rem;
+  letter-spacing: .075em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.projects-page .academic-affiliation strong {
+  color: var(--project-navy);
+  font-size: 1rem;
+  letter-spacing: -.015em;
+  white-space: nowrap;
+}
+.projects-page .academic-affiliation > span:last-child {
+  flex-basis: 100%;
+  color: #526779;
+  font-size: .82rem;
+}
+.projects-page .projects-hero h1 { color: var(--project-navy); }
+.projects-page .projects-hero .page-description { color: #3d4c5c; }
+.projects-page .project-index a {
+  border: 1px solid #cdd8e3;
+  color: var(--project-navy);
+  background: #fff;
+  text-decoration: none;
+  transition: border-color .15s ease, background .15s ease;
+}
+.projects-page .project-index a:hover {
+  background: #fceff2;
+  border-color: var(--project-red);
+  color: var(--project-navy);
+}
+.projects-page .section[id] { border-bottom: 1px solid #dfe7ef; }
+.projects-page .section.alt { background: #f3f7fb; }
+.projects-page .project-detail {
+  border-left: 4px solid var(--project-red);
+  padding-left: 25px;
+}
+.projects-page .project-title h2 { color: var(--project-navy); }
+.projects-page .project-title .eyebrow { color: #a31333; }
+.projects-page .project-title .project-mark {
+  background: #e8eff7;
+  border-color: #c9d8e9;
+  color: var(--project-navy);
+}
+.projects-page .project-body h3 { color: var(--project-blue); }
+.projects-page .project-photo {
+  border-color: #cddae6;
+  box-shadow: 0 5px 18px rgba(5, 20, 53, .035);
+}
+.projects-page .project-photo figcaption strong { color: var(--project-navy); }
+.projects-page .text-link,
+.projects-page .project-source a { color: var(--project-blue); }
+.projects-page a:focus-visible { outline-color: var(--project-red); }
+@media (max-width: 820px) {
+  .projects-page .projects-hero { padding: 42px 0; }
+  .projects-page .project-detail { padding-left: 18px; }
+  .projects-page .academic-affiliation { margin-bottom: 24px; }
+}
+@media (max-width: 520px) {
+  .projects-page .academic-affiliation { align-items: flex-start; flex-direction: column; padding: 12px 14px; }
+  .projects-page .academic-affiliation > span:last-child { flex-basis: auto; }
+}
+
+/* Fundraising story photographs alongside their matching dated updates. */
+.fundraising-page .fundraising-update-grid {
+  display: grid;
+  grid-template-columns: minmax(0,1fr);
+  gap: 22px;
+}
+.fundraising-page .fundraising-update-card {
+  display: grid;
+  grid-template-columns: minmax(0,1.05fr) minmax(260px,.85fr);
+  min-width: 0;
+  overflow: hidden;
+  align-items: stretch;
+}
+.fundraising-page .fundraising-update-card-text {
+  grid-template-columns: 1fr;
+}
+.fundraising-page .fundraising-update-card .fundraising-update-body {
+  padding: 30px;
+  align-self: center;
+}
+.fundraising-page .fundraising-update-card .update-photo {
+  border-top: 0;
+  border-left: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  margin: 0;
+  background: #faf7ff;
+}
+.fundraising-page .fundraising-update-card .update-photo a {
+  display: grid;
+  place-items: center;
+  flex: 1 1 auto;
+  padding: 12px;
+  background: #faf7ff;
+}
+.fundraising-page .fundraising-update-card .update-photo img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 390px;
+  margin: auto;
+  object-fit: contain;
+  background: #faf7ff;
+}
+.fundraising-page .fundraising-update-card .update-photo figcaption {
+  border-top: 1px solid var(--line);
+  background: #fff;
+  text-align: center;
+}
+@media (max-width: 820px) {
+  .fundraising-page .fundraising-update-card { grid-template-columns: minmax(0,1fr); }
+  .fundraising-page .fundraising-update-card .update-photo {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+  .fundraising-page .fundraising-update-card .fundraising-update-body { padding: 24px; }
+}
