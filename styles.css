@@ -458,7 +458,7 @@ header nav { align-items: center; }
   --white: #ffffff;
   --project-navy: #051435;
   --project-blue: #003a65;
-  --project-red: #c60c30;
+  --project-red: #da1a35;
   background: #ffffff;
 }
 .projects-page header { background: rgba(255,255,255,.97); border-bottom: 1px solid #d9e2ec; }
